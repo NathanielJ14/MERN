@@ -1,0 +1,8 @@
+db.students.find({home_state: "California"})
+
+db.students.find({home_state: "Washington"})
+
+db.students.find({lucky_number: {$gt: 3}})
+
+db.students.updateMany({}, {$push: {interest: ["coding", "brunch", "MongoDB"]}})
+
